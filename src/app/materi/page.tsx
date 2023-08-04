@@ -11,7 +11,7 @@ const submodules = [
 
 export default () => <>
     <div className="m-4">
-        <div className="bg-[rgb(24,26,27)] p-4 mb-12">
+        <div className="bg-[rgb(24,26,27)] p-4 mb-12 rounded-lg">
             <div className="w-1/4">
                 <RoundedImage image={html} alt="html" />
             </div>
