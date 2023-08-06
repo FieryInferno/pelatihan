@@ -39,7 +39,7 @@ export default ({title, bab} : {title: string, bab: Array<string>}) => {
                 </div>
                 <div className="bab">
                     {bab.map((b, index) => 
-                        <Link href={'submodule'} key={`bab${index}`}>
+                        <Link href={`submodule?index=${index}`} key={`bab${index}`}>
                             <div className="flex items-center bg-[rgb(27,29,30)] p-4 rounded-lg mb-4 cursor-pointer">
                                 <div>
                                     <Image src={lesson} alt="Lesson" className="w-3/4"/>
