@@ -4,6 +4,7 @@ import Image from "next/image";
 import arrowDown from "../../public/arrow-down.svg";
 import lesson from "../../public/lesson.svg";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default ({title, bab} : {title: string, bab: Array<string>}) => {
     const materiRef = useRef<HTMLDivElement>(null);
@@ -38,15 +39,17 @@ export default ({title, bab} : {title: string, bab: Array<string>}) => {
                 </div>
                 <div className="bab">
                     {bab.map((b, index) => 
-                        <div key={`bab${index}`} className="flex items-center bg-[rgb(27,29,30)] p-4 rounded-lg mb-4 cursor-pointer">
-                            <div>
-                                <Image src={lesson} alt="Lesson" className="w-3/4"/>
+                        <Link href={'submodule'} key={`bab${index}`}>
+                            <div className="flex items-center bg-[rgb(27,29,30)] p-4 rounded-lg mb-4 cursor-pointer">
+                                <div>
+                                    <Image src={lesson} alt="Lesson" className="w-3/4"/>
+                                </div>
+                                <div>
+                                    <div className="mb-2 text-xs text-[rgb(153,144,131)] font-bold">Pelajaran</div>
+                                    <div className="text-[rgb(196,191,183)]">{b}</div>
+                                </div>
                             </div>
-                            <div>
-                                <div className="mb-2 text-xs text-[rgb(153,144,131)] font-bold">Pelajaran</div>
-                                <div className="text-[rgb(196,191,183)]">{b}</div>
-                            </div>
-                        </div>
+                        </Link>
                     )}
                 </div>
             </div>

@@ -1,4 +1,3 @@
-
 import BackButton from "@/components/BackButton";
 import ModuleDescription from "@/components/ModuleDescription";
 import Submodules from "@/components/Submodules";
