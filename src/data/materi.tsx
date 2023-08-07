@@ -112,10 +112,10 @@ export default [{
                     <p class="mb-4">Kita akan mempelajari materi-materi dasar seputar HTML. Materi dalam kelas ini dibagi menjadi 3 modul. Berikut adalah modul-modul yang akan dicakup dalam kelas ini.</p>`,
                     `<h1 class="text-2xl mb-4 font-bold">1. Pengenalan Website</h1>
                     <p class="mb-4">Pada modul ini kita akan mempelajari berbagai hal seputar website seperti pengertian website, sejarah website secara singkat, struktur pembentuk website dan client dan server.</p>`,
-                    `<h1 className="text-2xl mb-4 font-bold">2. Pengenalan HTML</h1>
-                    <p className="mb-4">Pada modul ini kita akan mengenal apa itu HTML, proses pembuatan dokumen HTML, struktur dasar dokumen HTML, dan cara mengidentifikasi elemen yang tepat pada konten website.</p>`,
-                    `<h1 className="text-2xl mb-4 font-bold">3. Pendalaman HTML</h1>
-                    <p className="mb-4">Modul ini merupakan modul lanjutan dari modul sebelumnya yang membahas secara lebih dalam mengenai elemen-elemen HTML. Contohnya attribute pada elemen, paragraf, heading, list, image, teks terformat (quote, anchor, bold, dll), semantic HTML, generic element, table, special character, dan sebagainya.</p>,`
+                    `<h1 class="text-2xl mb-4 font-bold">2. Pengenalan HTML</h1>
+                    <p class="mb-4">Pada modul ini kita akan mengenal apa itu HTML, proses pembuatan dokumen HTML, struktur dasar dokumen HTML, dan cara mengidentifikasi elemen yang tepat pada konten website.</p>`,
+                    `<h1 class="text-2xl mb-4 font-bold">3. Pendalaman HTML</h1>
+                    <p class="mb-4">Modul ini merupakan modul lanjutan dari modul sebelumnya yang membahas secara lebih dalam mengenai elemen-elemen HTML. Contohnya attribute pada elemen, paragraf, heading, list, image, teks terformat (quote, anchor, bold, dll), semantic HTML, generic element, table, special character, dan sebagainya.</p>`,
                 ],
             },
             // 'Daftar Referensi',

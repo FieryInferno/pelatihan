@@ -3,7 +3,7 @@ import ModuleDescription from "@/components/ModuleDescription";
 import Submodules from "@/components/Submodules";
 
 export default () => <>
-    <div className="m-4">
+    <div className="m-4 lg:mx-80">
         {/* Tombol kembali  */}
         <BackButton />
 
