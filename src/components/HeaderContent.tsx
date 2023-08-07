@@ -2,20 +2,14 @@
 
 import Image from "next/image";
 import close from "../../public/close.svg";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useContext, useEffect, useRef } from "react";
-import { MateriContext } from "@/data/MateriProvider";
-import { ContentContext } from "@/data/ContentProvider";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
+import useContent from "@/data/useContent";
 
 export default () => {
     const router = useRouter();
-    const searchParams = useSearchParams();
-    const indexSubmodule = searchParams.get('subModule');
-    const indexBab = searchParams.get('bab');
-    const { materi } = useContext(MateriContext);
-    const bab = materi?.submodules[indexSubmodule!].bab[indexBab!];
-    const { index } = useContext(ContentContext);
     const sliderRef = useRef<HTMLDivElement>(null);
+    const {index, bab} = useContent();
     const length = bab?.subbab.length;
     const newIndex = index + 1;
 
