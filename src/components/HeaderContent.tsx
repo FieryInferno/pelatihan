@@ -3,7 +3,7 @@
 import Image from "next/image";
 import close from "../../public/close.svg";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { MateriContext } from "@/data/MateriProvider";
 import { ContentContext } from "@/data/ContentProvider";
 
@@ -15,6 +15,13 @@ export default () => {
     const { materi } = useContext(MateriContext);
     const bab = materi?.submodules[indexSubmodule!].bab[indexBab!];
     const { index } = useContext(ContentContext);
+    const sliderRef = useRef<HTMLDivElement>(null);
+    const length = bab?.subbab.length;
+    const newIndex = index + 1;
+
+    useEffect(() => {
+        if (newIndex >= 2 && sliderRef.current) sliderRef.current.style.left = newIndex / length * 98 + '%';
+    }, [index, sliderRef]);
 
     return (
         <>
@@ -27,9 +34,9 @@ export default () => {
                 </div>
                 <div className="flex gap-4 items-center">
                     <div className="bg-green-500 basis-10/12 rounded-2xl h-2 relative">
-                        <div className="w-2 h-2 top-1/2 bg-white rounded-[50%] absolute -translate-y-1/2 left-0"></div>
+                        <div className="w-2 h-2 top-1/2 bg-white rounded-[50%] absolute -translate-y-1/2 left-0 transition-all duration-300" ref={sliderRef}></div>
                     </div>
-                    <div>{index + 1} / {bab?.subbab.length}</div>
+                    <div>{newIndex} / {length}</div>
                 </div>
             </div>
         </>
