@@ -14,7 +14,14 @@ export default () => {
     const newIndex = index + 1;
 
     useEffect(() => {
-        if (newIndex >= 2 && sliderRef.current) sliderRef.current.style.left = newIndex / length * 98 + '%';
+        if (sliderRef.current) {
+            let newLeft;
+
+            if (index === 0) newLeft = 0;
+            else newLeft = newIndex / length * 98;
+
+            sliderRef.current.style.left =  newLeft + '%';
+        }
     }, [index, sliderRef]);
 
     return (

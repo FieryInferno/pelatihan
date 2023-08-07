@@ -91,7 +91,7 @@ export default [{
                 title: 'Mekanisme Belajar',
                 subbab: [
                     `<h1 class="text-2xl mb-4 font-bold">Materi Pembelajaran</h1>
-                    <ul class="list-disc ml-4 mb-4">
+                    <ul style="list-style: disc;margin-left: 1rem;">
                         <li>Materi Bacaan Elektronik</li>
                         <p>Materi yang ada dalam kelas ini mayoritas berupa teks atau tulisan. Karena proses belajar di bidang pemrograman, bentuk materi pembelajaran yang paling efektif untuk diingat, dimengerti, dan dipraktikkan adalah dalam bentuk teks.</p>
                         <li>Video</li>
@@ -99,14 +99,25 @@ export default [{
                         <li>Forum Diskusi</li>
                         <p>Untuk forum disuki, tanya jawab dan share materi kita bisa menggunakan grup telegram yang sudah tersedia</p>
                     </ul>`,
-                    `<h1 className="text-2xl mb-4 font-bold">Evaluasi Pembelajaran</h1>
-                    <p className="mb-4">
+                    `<h1 class="text-2xl mb-4 font-bold">Evaluasi Pembelajaran</h1>
+                    <p class="mb-4">
                         Untuk evaluasi pembelajaran, akan disediakan latihan untuk peserta lalu hasil dari latihan tersebut akan dipresentasikan ketika pertemuan.
                     </p>`,
                 ],
             },
-            // 'Forum Diskusi',
-            // 'Materi yang akan Dipelajari',
+            {
+                title: 'Materi yang akan Dipelajari',
+                subbab: [
+                    `<h1 class="text-2xl mb-4 font-bold">Materi yang akan Dipelajar</h1>
+                    <p class="mb-4">Kita akan mempelajari materi-materi dasar seputar HTML. Materi dalam kelas ini dibagi menjadi 3 modul. Berikut adalah modul-modul yang akan dicakup dalam kelas ini.</p>`,
+                    `<h1 class="text-2xl mb-4 font-bold">1. Pengenalan Website</h1>
+                    <p class="mb-4">Pada modul ini kita akan mempelajari berbagai hal seputar website seperti pengertian website, sejarah website secara singkat, struktur pembentuk website dan client dan server.</p>`,
+                    `<h1 className="text-2xl mb-4 font-bold">2. Pengenalan HTML</h1>
+                    <p className="mb-4">Pada modul ini kita akan mengenal apa itu HTML, proses pembuatan dokumen HTML, struktur dasar dokumen HTML, dan cara mengidentifikasi elemen yang tepat pada konten website.</p>`,
+                    `<h1 className="text-2xl mb-4 font-bold">3. Pendalaman HTML</h1>
+                    <p className="mb-4">Modul ini merupakan modul lanjutan dari modul sebelumnya yang membahas secara lebih dalam mengenai elemen-elemen HTML. Contohnya attribute pada elemen, paragraf, heading, list, image, teks terformat (quote, anchor, bold, dll), semantic HTML, generic element, table, special character, dan sebagainya.</p>,`
+                ],
+            },
             // 'Daftar Referensi',
         ]},
         {title: 'Pendahuluan', bab: [
