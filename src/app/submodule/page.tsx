@@ -5,7 +5,7 @@ import ContentProvider from "@/data/ContentProvider";
 
 export default () => <>
     <ContentProvider>
-        <div className="px-4">
+        <div className="px-4 lg:px-16">
             <HeaderContent />
             <Content />
             <FooterContent />
