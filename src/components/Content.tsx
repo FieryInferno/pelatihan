@@ -9,7 +9,7 @@ export default () => {
     const indexSubmodule = searchParams.get('subModule');
     const indexBab = searchParams.get('bab');
     const { materi } = useContext(MateriContext);
-    const subbab = materi?.submodules[indexSubmodule!].bab[indexBab!].subbab;
+    const subbab = materi?.submodules[indexSubmodule!].bab[indexBab!].subbab[0];
     const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -18,8 +18,7 @@ export default () => {
 
     return (
         <>
-            <div className="mt-40 mb-24" ref={contentRef}>
-            </div>
+            <div className="mt-40 mb-40" ref={contentRef}></div>
         </>
     );
 }
