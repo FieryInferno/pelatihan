@@ -5,7 +5,7 @@ import { useContext, useEffect, useRef } from "react";
 import { MateriContext } from "@/data/MateriProvider";
 import { ContentContext } from "@/data/ContentProvider";
 
-export default () => {
+export default function Content() {
     const searchParams = useSearchParams();
     const indexSubmodule = searchParams.get('subModule');
     const indexBab = searchParams.get('bab');

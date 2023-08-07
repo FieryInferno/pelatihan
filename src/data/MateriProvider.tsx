@@ -3,7 +3,7 @@
 import { ReactNode, createContext, useState, useEffect } from "react";
 
 export const MateriContext = createContext<any>({});
-export default ({ children } : {children: ReactNode}) => {
+export default function MateriProvider({ children } : {children: ReactNode}) {
     const [materi, setMateri] = useState<object | null>(null);
     const newSetMateri = (materi: object) => {
         setMateri(materi);

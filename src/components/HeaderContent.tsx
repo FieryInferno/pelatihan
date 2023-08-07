@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import useContent from "@/data/useContent";
 
-export default () => {
+export default function HeaderContent() {
     const router = useRouter();
     const sliderRef = useRef<HTMLDivElement>(null);
     const {index, bab} = useContent();
@@ -22,7 +22,7 @@ export default () => {
 
             sliderRef.current.style.left =  newLeft + '%';
         }
-    }, [index, sliderRef]);
+    }, [index, sliderRef, length, newIndex]);
 
     return (
         <>

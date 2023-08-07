@@ -4,7 +4,7 @@ import { useContext } from "react";
 import RoundedImage from "@/components/RoundedImage";
 import { MateriContext } from "@/data/MateriProvider";
 
-export default () => {
+export default function ModuleDescription() {
     const { materi } = useContext(MateriContext);
 
     return (

@@ -2,7 +2,7 @@
 
 import useContent from "@/data/useContent";
 
-export default () => {
+export default function FooterContent() {
     const { index, setIndex, bab } = useContent();
 
     return (

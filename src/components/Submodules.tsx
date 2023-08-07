@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Submodule from "./Submodule";
 import { Bab } from "@/data/materi";
 
-export default () => {
+export default function Submodules() {
     const {materi} = useContext(MateriContext);
 
     return (

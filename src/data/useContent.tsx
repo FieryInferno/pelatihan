@@ -5,7 +5,7 @@ import { ContentContext } from "@/data/ContentProvider";
 import { useSearchParams } from "next/navigation";
 import { MateriContext } from "./MateriProvider";
 
-export default () => {
+export default function useContent() {
     const { index, setIndex } = useContext(ContentContext);
     const searchParams = useSearchParams();
     const indexSubmodule = searchParams.get('subModule');

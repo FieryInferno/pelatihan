@@ -8,7 +8,7 @@ interface Content {
 }
 
 export const ContentContext = createContext<Content>({index: 0, setIndex: () => {}});
-export default ({children} : {children: ReactNode}) => {
+export default function ContentProvider({children} : {children: ReactNode}) {
     const [index, setIndex] = useState(0);
     return <ContentContext.Provider value={{index: index, setIndex: setIndex}}>{children}</ContentContext.Provider>
 }

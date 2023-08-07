@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { Bab } from "@/data/materi";
 
-export default ({indexSubmodule, title, bab} : {indexSubmodule: number, title: string, bab: Array<Bab>}) => {
+export default function Submodule({indexSubmodule, title, bab} : {indexSubmodule: number, title: string, bab: Array<Bab>}) {
     const materiRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { MateriContext } from "@/data/MateriProvider";
 import { useRouter } from "next/navigation";
 
-export default (materi : {image: StaticImageData, title: string}) => {
+export default function MateriCard(materi : {image: StaticImageData, title: string}) {
     const { newSetMateri } = useContext(MateriContext);
     const router = useRouter();
 

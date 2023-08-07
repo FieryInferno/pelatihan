@@ -4,7 +4,7 @@ import Image from "next/image";
 import arrowDown from "../../public/arrow-down.svg";
 import { useRouter } from "next/navigation";
 
-export default () => {
+export default function BackButton() {
     const router = useRouter();
     
     return (

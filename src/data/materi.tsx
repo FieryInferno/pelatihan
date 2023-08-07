@@ -7,7 +7,7 @@ export interface Bab {
     subbab: Array<string>;
 }
 
-export default [{
+const materi = [{
     title: 'html',
     image: htmlImage,
     description: 'Dalam module ini kita akan mempelajari materi - materi dasar seputar pemrograman website, struktur pembentuk website, proses pembuatan dokumen HTML, struktur dasar HTML dan elemen - elemen HTML sepeti paragraf, heading, list, image, semantic HTML, generic HTML dan berbagai atribut didalamnya.',
@@ -156,3 +156,5 @@ export default [{
         ]},
     ],
 }, {title: 'css', image: css}, {title: 'javascript', image: javascript}];
+
+export default materi;
