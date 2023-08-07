@@ -5,6 +5,7 @@ import close from "../../public/close.svg";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useContext } from "react";
 import { MateriContext } from "@/data/MateriProvider";
+import { ContentContext } from "@/data/ContentProvider";
 
 export default () => {
     const router = useRouter();
@@ -13,6 +14,7 @@ export default () => {
     const indexBab = searchParams.get('bab');
     const { materi } = useContext(MateriContext);
     const bab = materi?.submodules[indexSubmodule!].bab[indexBab!];
+    const { index } = useContext(ContentContext);
 
     return (
         <>
@@ -27,7 +29,7 @@ export default () => {
                     <div className="bg-green-500 basis-10/12 rounded-2xl h-2 relative">
                         <div className="w-2 h-2 top-1/2 bg-white rounded-[50%] absolute -translate-y-1/2 left-0"></div>
                     </div>
-                    <div>1 / {bab?.subbab.length}</div>
+                    <div>{index + 1} / {bab?.subbab.length}</div>
                 </div>
             </div>
         </>
