@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <div className="py-12 px-2 lg:px-40">
         <div className="uppercase font-bold text-center mb-12 text-2xl">pelatihan</div>
-        <div className="grid grid-cols-2 gap-2 gap-y-4 lg:grid-cols-6 lg:gap-16">
+        <div className="grid grid-cols-2 gap-2 gap-y-4 lg:grid-cols-6 lg:gap-48">
           {materi.map((mat, index) => <MateriCard key={`materi-card${index}`} {...mat} />)}
         </div>
       </div>

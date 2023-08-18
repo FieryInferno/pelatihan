@@ -217,6 +217,17 @@ const materi = [{
             // 'Special Character',
         ]},
     ],
-}, {title: 'css', image: css}, {title: 'javascript', image: javascript}];
+    shadowColor: 'rgba(242,102,37,1)',
+},
+{
+    title: 'css',
+    image: css,
+    shadowColor: 'rgba(37,171,226,1)',
+},
+{
+    title: 'javascript',
+    image: javascript,
+    shadowColor: 'rgb(239,218,79)',
+}];
 
 export default materi;
