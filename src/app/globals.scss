@@ -20,3 +20,11 @@ body {color: #e8e6e3; background-color: rgb(15, 18, 20)}
         overflow: hidden;
     }
 }
+
+.code {
+    list-style-type: decimal;
+
+    li:nth-child(odd) {
+        background-color: #383737;
+    }
+}

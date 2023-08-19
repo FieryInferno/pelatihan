@@ -24,7 +24,7 @@ const materi = [{
                     `,
                     `<h1 class="text-2xl mb-4 font-bold">WebStorm (Jetbrains)</h1>
                         <div class="flex justify-center">
-                            <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ac5bc58f36846832d1917ccd72fdb00a20221228185950.png' alt="html" class="mb-4 lg:w-1/4" ß/>
+                            <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ac5bc58f36846832d1917ccd72fdb00a20221228185950.png' alt="html" class="mb-4 lg:w-1/4" />
                         </div>
                         <p class="mb-4">Salah satu produk milik Jetbrains yang berfokus pada pengembangan web seperti HTML, CSS, dan JavaScript. Berbagai framework JavaScript juga didukung, seperti React, Vue, Angular, dsb. IDE ini tidaklah gratis. Namun, IDE ini dapat diperoleh secara percuma dengan memanfaatkan Student License jika Anda seorang pelajar, mahasiswa, atau dosen. Silakan simak selengkapnya pada jetbrains.com/webstorm.</p>
                     `,
@@ -147,7 +147,7 @@ const materi = [{
                     <div class="flex justify-center">
                         <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:82a2e7f86e16cae4a3719f391c2ebc8f20230612145356.jpeg" alt="html" class="mb-4 lg:w-1/2" />
                     </div>
-                    <p className="mb-4">Sebagaimana tubuh hewan yang disusun dari kerangka tulang, HTML pada website berperan sebagai kerangka dasar yang digunakan dalam menampilkan visual pada website. Namun, jika hanya sebatas kerangka, hewan tersebut akan terlihat seram dan aneh, bukan? Oleh karena itu, untuk mempercantik sosoknya, kita membutuhkan sebuah kulit, bulu, warna bulu, dsb. Di sinilah peran CSS.</p>
+                    <p class="mb-4">Sebagaimana tubuh hewan yang disusun dari kerangka tulang, HTML pada website berperan sebagai kerangka dasar yang digunakan dalam menampilkan visual pada website. Namun, jika hanya sebatas kerangka, hewan tersebut akan terlihat seram dan aneh, bukan? Oleh karena itu, untuk mempercantik sosoknya, kita membutuhkan sebuah kulit, bulu, warna bulu, dsb. Di sinilah peran CSS.</p>
                     <p class="mb-4">Setelah memiliki kulit dan tampak cantik, selanjutnya kita membutuhkan interaktivitas pada kucing agar dapat bergerak dan berinteraksi. Ibarat dalam kasus ini, JavaScript-lah yang berperan dalam membuat website menjadi dinamis dan interaktif.</p>`,
                 ],
             },
@@ -187,11 +187,60 @@ const materi = [{
                         <li>Menyimpan kode yang telah ditulis dalam bentuk HTML.</li>
                         <li>Menjalankan berkas HTML dalam browser (Google Chrome).</li>
                     </ul>`,
-                    `<h1 class="text-2xl mb-4 font-bold">Latihan Membangun Halaman Web Pertama</h1>
+                    `
+                    <h1 class="text-2xl mb-4 font-bold">Latihan Membangun Halaman Web Pertama</h1>
                     <ul class="mb-4 list-decimal">
-                        <li>Bukan code editor yang akan kita gunakan</li>
-                        <li>Selanjutnya, kita akan mulai menuliskan konten untuk halaman web kita. Sebetulnya, ada struktur yang disepakati untuk menuliskan halaman web. Saat ini masih dalam tahap awal membuat halaman web, jadi kita akan menuliskan kontennya secara langsung. Silakan isi dengan konten berikut pada code editor.</li>
-                    </ul>`
+                        <li>Buat sebuah folder</li>
+                        <li>Buka code editor yang akan kita gunakan dan buka folder yang sudah dibuat</li>
+                        <li>Buat sebuah file dengan nama index.html</li>
+                        <li>
+                            Selanjutnya, kita akan mulai menuliskan konten untuk halaman web kita. Sebetulnya, ada struktur yang disepakati untuk menuliskan halaman web. Saat ini masih dalam tahap awal membuat halaman web, jadi kita akan menuliskan kontennya secara langsung. Silakan isi dengan konten berikut pada code editor.
+                            <div class="flex justify-center">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li><span class="pln">Bandung</span></p>
+                                            <li><span class="pln">Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Sejarah</span></p>
+                                            <li><span class="pln">Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga. Legenda yang diceritakan oleh orang-orang tua di Bandung mengatakan bahwa nama Bandung diambil dari sebuah kendaraan air yang terdiri dari dua perahu yang diikat berdampingan yang disebut perahu bandung yang digunakan oleh Bupati Bandung, R.A. Wiranatakusumah II, untuk melayari Ci Tarum dalam mencari tempat kedudukan kabupaten yang baru untuk menggantikan ibu kota yang lama di Dayeuhkolot.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Berdasarkan filosofi Sunda, kata Bandung juga berasal dari kalimat Nga-Bandung-an Banda Indung, yang merupakan kalimat sakral dan luhur karena mengandung nilai ajaran Sunda. Nga-Bandung-an artinya menyaksikan atau bersaksi. Banda adalah segala sesuatu yang berada di alam hidup yaitu di bumi dan atmosfer, baik makhluk hidup maupun benda mati. Sinonim dari banda adalah harta. Indung berarti Ibu atau Bumi, disebut juga sebagai Ibu Pertiwi tempat Banda berada.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Geografis</span></p>
+                                            <li><span class="pln">Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah mangkok raksasa, secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat, serta berada pada ketinggian &plusmn;768 m di atas permukaan laut, dengan titik tertinggi di berada di sebelah utara dengan ketinggian 1.050 meter di atas permukaan laut dan sebelah selatan merupakan kawasan rendah dengan ketinggian 675 meter di atas permukaan laut.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Kota Bandung dialiri dua sungai utama, yaitu Sungai Cikapundung dan Sungai Citarum beserta anak-anak sungainya yang pada umumnya mengalir ke arah selatan dan bertemu di Sungai Citarum. Dengan kondisi yang demikian, Bandung selatan sangat rentan terhadap masalah banjir terutama pada musim hujan.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Wisata</span></p>
+                                            <li><span class="pln">Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya. Selain menjadi kota wisata belanja, kota Bandung juga dikenal dengan sejumlah besar bangunan lama berarsitektur peninggalan Belanda.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Farm House Lembang</span></p>
+                                            <li><span class="pln">Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">&nbsp;</span></p>
+                                            <li><span class="pln">Observatorium Bosscha</span></p>
+                                            <li><span class="pln">Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop terbesar untuk meneropong bintang. Benda ini diletakkan pada atap kubah sehingga saat teropong digunakan, atap tersebut harus dibuka. Observatorium Bosscha boleh dikunjungi oleh siapa pun, tanpa tiket. Namun, bagi yang ingin menggunakan teleskop Zeiss, wajib mendaftarkan diri. Untuk instansi atau lembaga pendidikan, diberikan jadwal hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka setiap hari Sabtu.</span></p>
+                                        </ol>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Save dengan menggunakan CTRL + S</li>
+                        <li>
+                            Selanjutnya untuk melihat hasilnya, silakan buka berkas HTML tersebut dengan menggunakan browser, Cara yang paling mudah adalah dobel klik berkas tersebut dan hasilnya akan tampak seperti berikut
+                            <div class="flex justify-center">
+                                <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:d64c674cd98d7b9da4f1c8d98e01b1c520230614144041.jpeg' alt="html" class="mb-4 lg:w-1/2" />
+                            </div>
+                        </li>
+                    </ul>`,
                 ]
             },
         ]},
