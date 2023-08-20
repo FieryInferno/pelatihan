@@ -518,6 +518,165 @@ const materi = [
                             <p class="mb-4">Elemen ini memiliki peran yang sangat besar terhadap browser agar informasi-informasi dapat ditampilkan dengan baik. Untuk menambah wawasan, ada sumber artikel yang menyebutkan elemen HTML. Anda dapat membuka <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" class="text-blue-500"><u>HTML elements reference dari MDN</u></a>.</p>`,
                         ],
                     },
+                    {
+                        title: 'Attribute di Element HTML',
+                        subbab: [
+                            `<p class="mb-4">Dalam membuat elemen HTML, ada satu hal yang dapat dilakukan, yaitu memberi atribut. Atribut dapat memberi informasi-informasi tambahan untuk elemen HTML. Informasi ini tidak akan tampil dalam halaman web, tetapi ia dapat menentukan perilaku elemen biasanya.</p>`,
+                            `<p class="mb-4">Contohnya, ada satu elemen yang berfungsi untuk menampilkan gambar sebagai konten halaman web, yaitu&nbsp;&lt;img&gt;. Nah, kita perlu menyertakan informasi pada elemen tersebut, yaitu alamat dari gambar yang akan ditampilkan.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ca7c120f553eff399206116e79d0e4b020230614160049.jpeg' alt="html" class="mb-4 lg:w-1/2 " />
+                                </div>
+                            </p>
+                            <p class="mb-4">Pada gambar di atas, atribut&nbsp;<span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">src</span> menentukan lokasi gambar yang akan ditampilkan pada halaman web.</p>`,
+                            `<p class="mb-4">Dari contoh sebelumnya, mungkin Anda sudah terbayang bentuk penerapan atribut HTML. Namun, berikut adalah anatomi dari atribut elemen untuk memperjelas pemahaman Anda.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:3ce8a0457c8eb4b99e54aaaf57775b8c20230620095546.png' alt="html" class="mb-4 lg:w-1/2 " />
+                                </div>
+                            </p>
+                            <p class="mb-4">Pada gambar di atas, kita memiliki atribut&nbsp;<span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">class</span>. Secara singkat, atribut ini merupakan sebuah nama identitas yang digunakan untuk menargetkan elemen dengan kode styling. Untuk pembahasan styling akan dicakup pada modul terpisah.</p>`,
+                            `<p class="mb-4">Ada dua hal yang dilakukan untuk menambahkan atribut pada elemen HTML, yaitu nama atribut dan nilainya. Ada banyak atribut yang disediakan oleh HTML. Salah satu yang terlihat sebelumnya adalah <span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">class</span> dan&nbsp;<span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">src</span>. Terkait nilainya, Anda dapat menulisnya dengan membungkus dengan tanda kutip satu atau dua setelah karakter sama dengan (=).</p>`,
+                            `<p class="mb-4">Berikut adalah beberapa atribut yang tersedia di HTML.</p>
+                            <div class="table-responsive">
+                            <table class="table" cellspacing="0">
+                            <thead>
+                            <tr>
+                            <th style="text-align: center;">
+                            <p class="mb-4"><strong>Attribute</strong></p>
+                            </th>
+                            <th style="text-align: center;">
+                            <p class="mb-4"><strong>Description</strong></p>
+                            </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">accesskey</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan tombol shortcut untuk mengaktifkan/memfokuskan pada sebuah element.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">class</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan satu atau lebih classname untuk sebuah elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">contenteditable</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan konten dari elemen merupakan konten yang dapat diubah atau tidak.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">data-*</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menyimpan sebuah data pribadi khusus ke halaman atau aplikasi.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">dir</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan arah teks untuk konten pada suatu elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">draggable</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan suatu elemen dapat di-<em>drag</em> atau tidak.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">dropzone</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan data yang di-<em>drag&nbsp;</em>adalah data yang disalin, dipindahkan, atau ditautkan saat dijatuhkan.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">hidden</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan suatu elemen ditampilkan atau tidak pada browser.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">id</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menetapkan id pada elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">lang</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan bahasa pada konten elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">spellcheck</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan elemen harus diperiksa ejaannya dan tata bahasanya atau tidak.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">style</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan styling secara satu baris untuk suatu elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">tabindex</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan urutan dari suatu elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">title</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan informasi tambahan tentang suatu elemen.</p>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="width: 15.1101%;">
+                            <p class="mb-4">translate</p>
+                            </td>
+                            <td style="width: 84.8899%;">
+                            <p class="mb-4">Menentukan konten elemen harus diterjemahkan atau tidak.</p>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                            <p class="mb-4">Itulah pembahasan mengenai anatomi elemen HTML. Elemen ini memiliki peran yang sangat besar terhadap browser agar informasi-informasi dapat ditampilkan dengan baik. Untuk menambah wawasan, ada artikel yang menyebutkan atribut-atribut yang dapat digunakan. Silakan kunjungi <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes"><u>HTML attribute reference dari MDN</u></a>.</p>`,
+                        ],
+                    },
                 ],
             },
             {title: 'Pendalaman HTML', bab: [
