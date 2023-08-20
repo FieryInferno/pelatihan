@@ -18,12 +18,5 @@ export default function Content() {
         if (contentRef.current) contentRef.current.innerHTML = subbab;
     }, [contentRef, subbab]);
 
-    return (
-        <>
-            <div className="my-40" ref={contentRef}></div>
-            {/* <div className="my-40">
-                
-            </div> */}
-        </>
-    );
+    return <div className="my-40" ref={contentRef}></div>;
 }

@@ -19,40 +19,40 @@ const materi = [
                     {
                         title: 'Requirement Tools',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Peralatan yang Dibutuhkan</h1>
+                            `<h1 class="title">Peralatan yang Dibutuhkan</h1>
                             <p class="mb-4">Sebelum memulai pada pelajaran pemrograman, ada 2 hal yang harus kita siapkan terlebih dahulu. Yaitu Code Editor atau IDE dan Browser</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Code Editor atau IDE</h1>
+                            `<h1 class="title">Code Editor atau IDE</h1>
                             <p class="mb-4">Dalam mengembangkan aplikasi, baik website maupun platform lainnya, sudah pasti developer akan menuliskan kode-kode dalam bentuk HTML, CSS, maupun JavaScript. Semakin besar aplikasi maka semakin banyak kode yang akan dituliskan. Oleh karena itu, kita membutuhkan Code Editor atau Integrated Development Environment (IDE).</p>
                             <p class="mb-4">Sebenarnya, beberapa Sistem Operasi sudah menyediakan text editor usungannya masing-masing. Contohnya, Windows OS memiliki Notepad, Linux OS memiliki Text Editors, dan Mac OS memiliki TextEdit. Ketiga aplikasi tersebut dapat digunakan untuk menuliskan kode dalam pembuatan aplikasi website. Namun, tidak disarankan untuk menggunakan text editor tersebut karena tidak kaya akan fitur-fitur seperti IDE yang dapat mempercepat proses pengembangan web.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">WebStorm (Jetbrains)</h1>
+                            `<h1 class="title">WebStorm (Jetbrains)</h1>
                                 <div class="flex justify-center">
                                     <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ac5bc58f36846832d1917ccd72fdb00a20221228185950.png' alt="html" class="mb-4 lg:w-1/4" />
                                 </div>
                                 <p class="mb-4">Salah satu produk milik Jetbrains yang berfokus pada pengembangan web seperti HTML, CSS, dan JavaScript. Berbagai framework JavaScript juga didukung, seperti React, Vue, Angular, dsb. IDE ini tidaklah gratis. Namun, IDE ini dapat diperoleh secara percuma dengan memanfaatkan Student License jika Anda seorang pelajar, mahasiswa, atau dosen. Silakan simak selengkapnya pada jetbrains.com/webstorm.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">Visual Studio Code</h1>
+                            `<h1 class="title">Visual Studio Code</h1>
                                 <div class="flex justify-center">
                                     <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:91f04139a6d06cbf401bb52e74cc2b5b20221228190029.png' alt="html" class="mb-4 lg:w-1/4" />
                                 </div>
                                 <p class="mb-4">Visual Studio Code merupakan sebuah text editor yang dikembangkan oleh Microsoft. Code editor ini memiliki banyak fitur seperti debugging, version control integration, syntax highlighting, code search, code completion, code snippets, code refactoring, dan yang tak kalah penting adalah extensions/plugins. Extension dapat memperkaya fitur code editor sehingga dapat memudahkan penulisan kode. Visual Studio Code tersedia untuk sistem operasi Windows, Mac, dan Linux. Selain itu, tentunya code editor ini dapat kita gunakan secara gratis. Silakan kunjungi pada code.visualstudio.com.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">Brackets</h1>
+                            `<h1 class="title">Brackets</h1>
                                 <div class="flex justify-center">
                                     <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:f0abc93421cb7aa50c41d8ebaa1a8c3a20221228190556.png' alt="html" class="mb-4 lg:w-1/4" />
                                 </div>
                                 <p class="mb-4">Brackets merupakan text editor modern yang ringan dan cukup powerful untuk digunakan. Pada brackets terdapat fitur live preview sehingga Anda dapat melihat perubahan yang dilakukan tanpa harus reload browser. Brackets juga merupakan project open-source yang mendapat banyak dukungan dari para pelaku komunitas aktif. Untuk mengunduhnya, silakan kunjungi brackets.io.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">Web Browser</h1>
+                            `<h1 class="title">Web Browser</h1>
                                 <p class="mb-4">Dalam mengakses halaman web, user akan membutuhkan web browser. Developer pun memerlukannya untuk melihat hasil website yang dikembangkan. Berikut beberapa web browser dari berbagai vendor yang dapat digunakan.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">Mozilla Firefox</h1>
+                            `<h1 class="title">Mozilla Firefox</h1>
                                 <div class="flex justify-center">
                                     <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:a57d2b9a4121a85e497b0e3d22601be620221228192003.png' alt="html" class="mb-4 lg:w-1/4" />
                                 </div>
                                 <p class="mb-4">Firefox merupakan web browser usungan Mozilla. Browser ini memiliki keunggulan pada kesehatan internet dan menjaga privasi pengguna. Firefox juga dilengkapi berbagai fitur untuk meningkatkan produktivitas pengguna seperti Picture-in-Picture, sinkronisasi dengan perangkat mobile, tangkap gambar layar, dsb. Silakan simak pada mozilla.org/firefox/new.</p>
                             `,
-                            `<h1 class="text-2xl mb-4 font-bold">Google Chrome</h1>
+                            `<h1 class="title">Google Chrome</h1>
                                 <div class="flex justify-center">
                                     <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:244511dfc97709d8fa46707c25e605da20221228192626.png' alt="html" class="mb-4 lg:w-1/4" />
                                 </div>
@@ -63,7 +63,7 @@ const materi = [
                     {
                         title: 'Mekanisme Belajar',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Materi Pembelajaran</h1>
+                            `<h1 class="title">Materi Pembelajaran</h1>
                             <ul style="list-style: disc;margin-left: 1rem;">
                                 <li>Materi Bacaan Elektronik</li>
                                 <p>Materi yang ada dalam kelas ini mayoritas berupa teks atau tulisan. Karena proses belajar di bidang pemrograman, bentuk materi pembelajaran yang paling efektif untuk diingat, dimengerti, dan dipraktikkan adalah dalam bentuk teks.</p>
@@ -72,7 +72,7 @@ const materi = [
                                 <li>Forum Diskusi</li>
                                 <p>Untuk forum disuki, tanya jawab dan share materi kita bisa menggunakan grup telegram yang sudah tersedia</p>
                             </ul>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Evaluasi Pembelajaran</h1>
+                            `<h1 class="title">Evaluasi Pembelajaran</h1>
                             <p class="mb-4">
                                 Untuk evaluasi pembelajaran, akan disediakan latihan untuk peserta lalu hasil dari latihan tersebut akan dipresentasikan ketika pertemuan.
                             </p>`,
@@ -81,20 +81,20 @@ const materi = [
                     {
                         title: 'Materi yang akan Dipelajari',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Materi yang akan Dipelajar</h1>
+                            `<h1 class="title">Materi yang akan Dipelajar</h1>
                             <p class="mb-4">Kita akan mempelajari materi-materi dasar seputar HTML. Materi dalam kelas ini dibagi menjadi 3 modul. Berikut adalah modul-modul yang akan dicakup dalam kelas ini.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">1. Pengenalan Website</h1>
+                            `<h1 class="title">1. Pengenalan Website</h1>
                             <p class="mb-4">Pada modul ini kita akan mempelajari berbagai hal seputar website seperti pengertian website, sejarah website secara singkat, struktur pembentuk website dan client dan server.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">2. Pengenalan HTML</h1>
+                            `<h1 class="title">2. Pengenalan HTML</h1>
                             <p class="mb-4">Pada modul ini kita akan mengenal apa itu HTML, proses pembuatan dokumen HTML, struktur dasar dokumen HTML, dan cara mengidentifikasi elemen yang tepat pada konten website.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">3. Pendalaman HTML</h1>
+                            `<h1 class="title">3. Pendalaman HTML</h1>
                             <p class="mb-4">Modul ini merupakan modul lanjutan dari modul sebelumnya yang membahas secara lebih dalam mengenai elemen-elemen HTML. Contohnya attribute pada elemen, paragraf, heading, list, image, teks terformat (quote, anchor, bold, dll), semantic HTML, generic element, table, special character, dan sebagainya.</p>`,
                         ],
                     },
                     {
                         title: 'Daftar Referensi',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Daftar Referensi</h1>
+                            `<h1 class="title">Daftar Referensi</h1>
                             <ul class="list-disc">
                                 <li>
                                     <a href="https://www.freecodecamp.org/news/learn-html-in-5-minutes-ccd378d2ab72/">https://www.freecodecamp.org/news/learn-html-in-5-minutes-ccd378d2ab72/</a>
@@ -116,17 +116,17 @@ const materi = [
                     {
                         title: 'Website dan Halaman Web',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Website dan Halaman Web</h1>
+                            `<h1 class="title">Website dan Halaman Web</h1>
                             <p class="mb-4">
                                 Pada zaman modern sekarang ini pasti banyak dari kalian yang sudah mengenal apa itu website. Bahkan kita sekarang sedang mengakses sebuah website. Kita akan menggali memahami tentang website dan halaman web dan juga perbedaan diantara keduanya.
                             </p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Halaman Web</h1>
+                            `<h1 class="title">Halaman Web</h1>
                             <p class="mb-4">Halaman web merupakan halaman tunggal yang menampilkan informasi, baik berupa teks, gambar, maupun media lainnya. Tidak hanya media yang ditampilkan, halaman web yang dibangun dapat ditambahkan interaktivitas menggunakan kode (JavaScript).</p>
                             <div class="flex justify-center">
                                 <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:01534503eeb7bfc20b9ae9741e43e70120230612143110.jpeg" alt="html" class="mb-4 lg:w-1/2" />
                             </div>
                             <p class="mb-4">Halaman web di atas berisi banyak media yang disajikan hingga interaktivitas pengguna yang banyak. Halaman web yang diakses akan ditampilkan oleh browser menggunakan beberapa komponen pembangunnya. Kita akan membahas komponen-komponen ini pada materi Anatomi Website.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Website</h1>
+                            `<h1 class="title">Website</h1>
                             <p class="mb-4">Jika sebelumnya Anda belajar halaman web berupa halaman tunggal, website adalah sekumpulan halaman web yang saling terhubung. Website bersifat unik karena setiap halaman dapat saling terhubung dengan menggunakan hipertaut (hyperlink), baik dalam domain yang sama maupun berbeda.</p>
                             <p class="mb-4">Umumnya website memuat informasi yang disediakan secara perorangan, kelompok, atau organisasi. Semua informasi yang tersedia pada halaman website disimpan pada server. Kita akan membahas mengenai server pada materi berikutnya.</p>`,
                         ],
@@ -134,12 +134,12 @@ const materi = [
                     {
                         title: 'Anatomi Wesite',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Anatomi Website</h1>
+                            `<h1 class="title">Anatomi Website</h1>
                             <div class="flex justify-center">
                                 <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:1dd5084c0c0ba381a15f74c0428640e720230612145239.jpeg" alt="html" class="mb-4 lg:w-1/2" />
                             </div>
                             <p class="mb-4">Gambar diatas adalah salah satu website untuk melakukan pengeditan foto. Tentu, ada beberapa komponen yang dimanfaatkan agar website dapat berjalan dengan baik dan interaktif. Nah, sebelum terjun dalam cara pembuatan website, kita akan berkenalan terlebih dahulu dengan beberapa komponen tersebut. Ini merupakan pengetahuan penting yang perlu diketahui dan dipahami bagi seorang web developer</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Pondasi Website</h1>
+                            `<h1 class="title">Pondasi Website</h1>
                             <p class="mb-4">Pada dasarnya, website dibangun dengan tiga buah fondasi utama:</p>
                             <ul class="mb-4 list-disc">
                                 <li>HTML: sebuah markup language yang menentukan struktur atau kerangka dari halaman web;</li>
@@ -148,7 +148,7 @@ const materi = [
                             </ul>
                             <p class="mb-4">Perlu ditekankan bahwa ketiga komponen tersebut termasuk hal vital dalam pembangunan web. Sebenarnya, kita bisa saja membangun halaman web tanpa CSS dan JavaScript. Namun, website akan terlihat tidak menarik dan membosankan.</p>
                             <p class="mb-4">Saat ini, hampir tidak ada website yang dibangun tanpa menggunakan styling dan script (JavaScript). Oleh karena itu, jika salah satu dari ketiga komponen tersebut dihilangkan, hasil website yang disajikan terasa tidak lengkap.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Analogi Website Terhadap Hewan</h1>
+                            `<h1 class="title">Analogi Website Terhadap Hewan</h1>
                             <p class="mb-4">Untuk lebih memudahkan penggambaran, berikut adalah analogi dari penerapan tiga pondasi website</p>
                             <div class="flex justify-center">
                                 <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:82a2e7f86e16cae4a3719f391c2ebc8f20230612145356.jpeg" alt="html" class="mb-4 lg:w-1/2" />
@@ -165,7 +165,7 @@ const materi = [
                     {
                         title: 'Pengantar HTML',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Pengantar HTML</h1>
+                            `<h1 class="title">Pengantar HTML</h1>
                             <p class="mb-4">Pada modul sebelumnya, Anda sudah belajar banyak hal sebagai penuntun Anda memasuki front-end web development. Ada banyak pengetahuan yang telah diserap, seperti cara internet bekerja, website dan halaman web, web server, dan web browser. Selain itu, kamu juga sudah memahami anatomi dari website sehingga memahami komponen vital pembangun website. Nah, saat ini, seharusnya Anda sudah siap untuk memulai gathering knowledge tentang teknik pembangunan aplikasi web.</p>
                             <div class="flex justify-center">
                                 <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:3456ae4a1c774455d6ad47b7c432b26120230614143148.png" alt="html" class="mb-4 lg:w-1/4" />
@@ -180,15 +180,15 @@ const materi = [
                     {
                         title: 'Membangun Halaman Web Pertama',
                         subbab: [
-                            `<h1 class="text-2xl mb-4 font-bold">Membangun Halaman Web Pertama</h1>
+                            `<h1 class="title">Membangun Halaman Web Pertama</h1>
                             <p class="mb-4">Sebelumnya, Anda sudah berkenalan dengan HTML yang merupakan satu-satunya bahasa pembangun halaman web. Langkah berikutnya, sebelum belajar lebih jauh dengan HTML, kita akan berlatih membuat halaman web untuk yang pertama kalinya.</p>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Tujuan</h1>
+                            `<h1 class="title">Tujuan</h1>
                             <p class="mb-4">Dalam membuat halaman web pertama, tentunya bersinggungan dengan HTML. Kita akan mencoba membuatnya dari nol dengan menggunakan code editor yang tersedia.</p>
                             <p class="mb-4">Berikut adalah hasil yang didapat pada akhir latihan ini.</p>
                             <div class="flex justify-center">
                                 <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:df82468a75ee5dff2f7d22c94313225520230614143258.jpeg" alt="html" class="mb-4 lg:w-1/2" />
                             </div>`,
-                            `<h1 class="text-2xl mb-4 font-bold">Alur Latihan</h1>
+                            `<h1 class="title">Alur Latihan</h1>
                             <p class="mb-4">Berikut adalah alur latihan yang akan kita lakukan.</p>
                             <ul class="mb-4 list-decimal">
                                 <li>Membuka code editor bawaan sistem operasi.</li>
@@ -197,7 +197,7 @@ const materi = [
                                 <li>Menjalankan berkas HTML dalam browser (Google Chrome).</li>
                             </ul>`,
                             `
-                            <h1 class="text-2xl mb-4 font-bold">Latihan Membangun Halaman Web Pertama</h1>
+                            <h1 class="title">Latihan Membangun Halaman Web Pertama</h1>
                             <ul class="mb-4 list-decimal">
                                 <li>Buat sebuah folder</li>
                                 <li>Buka code editor yang akan kita gunakan dan buka folder yang sudah dibuat</li>
@@ -255,10 +255,10 @@ const materi = [
                     {
                         title: 'Identifikasi Elemen pada Halaman Profil',
                         subbab: [
-                            `<h4 class="text-2xl mb-4"><strong>Tujuan</strong></h4>
+                            `<h4 class="title"><strong>Tujuan</strong></h4>
                             <p class="mb-4">Pada latihan sebelumnya, konten halaman web ditampilkan dengan berantakan dan tidak mudah dibaca. Kita tidak berekspektasi pada browser bahwa tampilan halaman web akan mengikuti kode yang dituliskan pada code editor. Hal ini termasuk jika kita menambahkan baris baru dan karakter spasi pada code editor karena browser tidak akan membacanya.</p>
                             <p class="mb-4">Agar browser dapat mengenal setiap konten dan menampilkannya dengan rapi, kita akan memberinya elemen yang sesuai. Judul akan menggunakan elemen heading, paragraf akan menggunakan elemen paragraf, dsb.</p>`,
-                            `<h4 class="text-2xl mb-4"><strong>Alur Latihan</strong></h4>
+                            `<h4 class="title"><strong>Alur Latihan</strong></h4>
                             <p class="mb-4">Berikut adalah alur latihan kali ini.</p>
                             <ol class="mb-4 list-decimal">
                                 <li>Membuka hasil akhir dari latihan sebelumnya.</li>
@@ -267,7 +267,7 @@ const materi = [
                                 <li>Membungkus setiap bagian dari artikel dengan elemen yang tepat.</li>
                                 <li>Menjalankan dokumen HTML pada browser.</li>
                             </ol>`,
-                            `<h4 class="text-2xl mb-4"><strong>Identifikasi Elemen pada Halaman Website</strong></h4>
+                            `<h4 class="title"><strong>Identifikasi Elemen pada Halaman Website</strong></h4>
                             <p class="mb-4">Silakan ikuti beberapa langkah latihan berikut.</p>
                             <ol class="mb-4 list-decimal">
                                 <li>Membuka hasil akhir pada latihan sebelumnya.</li>
@@ -425,6 +425,97 @@ const materi = [
                                     </div>
                                 </li>
                             </ol>`,
+                        ],
+                    },
+                    {
+                        title: 'Anatomi HTML',
+                        subbab: [
+                            `<h3 class="title">Apa Itu Elemen HTML</h3>
+                            <p class="mb-4">Elemen adalah salah satu bagian dari HTML dalam membangun halaman web. Ini digunakan untuk mendefinisikan konten-konten yang ditampilkan dalam halaman web. Contohnya, kita bisa menggunakan elemen paragraf dalam menampilkan media teks sebagai kontennya.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:0b14e710caec66414bac5c077733ffed20230614155217.jpeg" alt="html" class="mb-4 lg:w-1/4" />
+                                </div>
+                            </p>
+                            <p class="mb-4">Gambar di atas adalah salah satu contoh elemen untuk menampilkan paragraf dalam halaman web. Bagaimana dengan judul? Tentunya, HTML memiliki elemen khusus untuk hal tersebut. HTML memiliki segudang elemen untuk mendukung kita dalam membuat halaman web yang baik.</p>
+                            <p class="mb-4">Jika gambar di atas dijalankan, hasilnya seperti berikut.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:7bc1b73b5f5d85da19bb918925d8ee5f20230614155217.jpeg" alt="html" class="mb-4 lg:w-1/4" />
+                                </div>
+                            </p>`,
+                            `<p class="mb-4">Apabila sekilas dilihat, sebetulnya tidak ada bedanya jika kita menuliskannya tanpa elemen HTML, yaitu menuliskan teks dalam berkas secara langsung.</p>
+                            <p class="mb-4">Berikut adalah perbedaan teks yang ditulis secara langsung dan teks yang ditulis didalam tag &lt;p&gt;.
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:1116b3212db1f6e636b39610415b38f820230614155555.jpeg" alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>
+                            <p class="mb-4">Untuk melihat seperti yang ditunjukkan gambar di atas, Anda dapat membuka Developer Tools (Inspect Elements) dan tab Elements serta Styles pada browser yang digunakan. Cara yang paling singkat untuk membukanya adalah menekan tombol F12.</p>`,
+                            `<p class="mb-4">Silakan Anda perhatikan kedua window Browser pada gambar di atas, lebih tepatnya DevTools pada bagian tab <strong>Styles</strong>. Kita melihat ada kotak yang berwarna jingga, kuning, hijau, dan biru (bagian kotak terdalam). Warna-warna tersebut merupakan margin, border, padding, dan konten (contohnya teks yang akan ditampilkan). Kotak ini merupakan hasil representasi dari seluruh elemen HTML.</p>
+                            <p class="mb-4">Berbicara mengenai perbedaan antara menggunakan elemen HTML maupun tidak, kita melihat ada perbedaan dari sisi styling. Teks yang dibungkus dengan elemen paragraf memiliki margin vertikal sebesar 16 piksel secara bawaan, sedangkan teks yang tidak dibungkus sama sekali tidak akan memiliki style apa pun, kecuali styling yang dimiliki oleh elemen &lt;body&gt;.</p>
+                            <p class="mb-4">Dalam membangun halaman web, penggunaan elemen HTML sangatlah penting. Sebagaimana disebutkan sebelumnya, browser akan memahami hal yang dituliskan jika kita menggunakan elemen yang tepat. Selain itu, browser memiliki pengaturan khusus bagi masing-masing elemen HTML, seperti styling yang diterapkan, aksesibilitas, dsb. Dibandingkan tanpa elemen, konten yang ditampilkan pun tidak memiliki arti apa pun oleh browser.</p>`,
+                            `<h3 class="title">Anatomi Elemen HTML</h3>
+                            <p class="mb-4">Kita semua sudah melihat secara sekilas rupa dari elemen HTML. Namun, ada beberapa hal untuk membangun elemen HTML itu sendiri. Secara garis besar, berikut adalah bagan dari anatomi elemen HTML.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:2a2139da159f243ece570f1c900d1e8a20230620095323.png" alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>`,
+                            `<p class="mb-4">Pada gambar sebelumnya, kita dapat melihat bahwa elemen HTML terdapat dua tag, yaitu tag pembuka <span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">&lt;&gt;</span> dan tag penutup <span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">&lt;/&gt;</span>. Di antara tag pembuka dan penutup, kita dapat meletakkan sebuah konten.</p>
+                            <div class="flex justify-center mb-4">
+                                <table class="table text-left text-gray-400">
+                                    <thead class="uppercase bg-gray-700 text-gray-400">
+                                        <tr>
+                                            <th style="text-align: center; width: 109.767px;" class="px-6 py-3">
+                                                <p dir="ltr"><strong>Item</strong></p>
+                                            </th>
+                                            <th style="text-align: center; width: 544.733px;" class="px-6 py-3">
+                                                <p dir="ltr"><strong>Keterangan</strong></p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b bg-gray-800 border-gray-700">
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">Tag pembuka</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Berisi nama dari elemen yang akan dibuat dan dibungkus dengan tanda kurung siku(&lt;&gt;). Contohnya adalah &lt;p&gt; untuk membuat elemen paragraf yang menggunakan p sebagai nama elemennya&ndash;singkatan dari kata paragraf dalam bahasa inggris (paragraph).</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">Konten</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Konten dari elemen. Contohnya teks sebagai konten dari elemen paragraf.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b bg-gray-800 border-gray-700">
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">Tag penutup</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Mirip seperti tag pembuka, tetapi terdapat garis miring sebelum nama elemennya. Ini menandakan akhir dari elemen HTML. Biasanya, kesalahan bagi web programmer pemula adalah melupakan tag ini sehingga menyebabkan elemen tidak valid.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>`,
+                            `<h3 class="title">Elemen dalam Elemen</h3>
+                            <p class="mb-4">Selain memiliki teks sebagai konten, elemen dapat memiliki elemen lain di dalamnya atau biasa disebut dengan&nbsp;<em>child-element</em>. Contohnya, kita memiliki elemen paragraf dengan teks sebagai konten di dalamnya. Kami ingin memberikan format teks miring atau tebal pada beberapa kata. Berikut adalah hasil implementasinya.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:d40aae4c01ab2e421d1efc8ceda0c94d20230614155838.jpeg" alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>
+                            <p class="mb-4">Hasilnya berikut.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:405b915f20c0264765e7fd8d6915d62820230614155838.jpeg" alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>
+                            <p class="mb-4">Elemen ini memiliki peran yang sangat besar terhadap browser agar informasi-informasi dapat ditampilkan dengan baik. Untuk menambah wawasan, ada sumber artikel yang menyebutkan elemen HTML. Anda dapat membuka <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" class="text-blue-500"><u>HTML elements reference dari MDN</u></a>.</p>`,
                         ],
                     },
                 ],
