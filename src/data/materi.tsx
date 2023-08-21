@@ -677,6 +677,199 @@ const materi = [
                             <p class="mb-4">Itulah pembahasan mengenai anatomi elemen HTML. Elemen ini memiliki peran yang sangat besar terhadap browser agar informasi-informasi dapat ditampilkan dengan baik. Untuk menambah wawasan, ada artikel yang menyebutkan atribut-atribut yang dapat digunakan. Silakan kunjungi <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes"><u>HTML attribute reference dari MDN</u></a>.</p>`,
                         ],
                     },
+                    {
+                        title: 'Anatomi di Dokumen HTML',
+                        subbab: [
+                            `<h2 class="title">Anatomi Dokumen HTML</h2>
+                            <p class="mb-4">Website serupa dengan dokumen konvensional yang ada. Serupa dalam arti memiliki struktur konten layaknya dokumen konvensional pada umumnya. Contohnya koran, majalah, atau buku. Selain itu, tidak jarang juga kita sering melihat artikel. Artikel memiliki beberapa komponen atau elemen, seperti judul, gambar, paragraf, dan sebagainya. Terkadang, jika konten artikel sangat panjang, pengelompokan akan dilakukan pada setiap bahasan menjadi beberapa bagian dengan memanfaatkan subjudul.</p>
+                            <p class="mb-4">Judul dan subjudul pada sebuah dokumen menggambarkan suatu hierarki informasi. Misalnya, judul tingkat tertinggi merupakan judul utama dalam sebuah konten. Kemudian, diikuti dengan judul tingkat lebih rendah dan menjelaskan informasi dengan lebih rinci lagi.</p>`,
+                            `<p class="mb-4">Pada dasarnya, dokumen HTML memerlukan struktur dasar untuk menampilkan halaman web dengan baik. Halaman web seharusnya memiliki susunan elemen HTML yang tampak seperti berikut.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:1fff210dfc27c1acce236c7ace7f775720230614154432.jpeg' alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>`,
+                            `<p class="mb-4">Pada pembahasan materi sebelumnya, kita mengetahui bahwa elemen dapat menjadi anak dari elemen lain atau biasa disebut child-element. Nah, contoh nyata yang dapat kita lihat adalah struktur dasar halaman web di atas. Contohnya, elemen &lt;head&gt; dan &lt;body&gt; merupakan child-element dari &lt;html&gt;. Lalu, elemen &lt;head&gt; memiliki child-element &lt;title&gt; yang memiliki konten berupa teks dari judul halaman yang ditampilkan. Elemen &lt;body&gt; memiliki child-element &lt;h1&gt; untuk menampilkan heading dan &lt;p&gt; untuk menampilkan paragraf.</p>`,
+                            `<p class="mb-4">Hal di atas sebetulnya akan membentuk sebuah hierarki elemen atau biasa disebut dengan DOM Tree (pohon DOM). Ini dapat Anda analogikan seperti silsilah keluarga.</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:4847f4456d343857a8446ae1fca98e0320230620095727.png' alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>`,
+                            `<h3 class="title">Doctype HTML</h3>
+                            <p class="mb-4">Sederhananya, doctype dimaksudkan sebagai format atau versi HTML dan berisi sekumpulan aturan-aturan yang perlu diikuti dalam membangun halaman web yang baik. Pada waktu lampau, dokumen HTML disusun seperti berikut.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="dec">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-4">Versi HTML yang digunakan dari kode di atas adalah 4. Selain itu, penulisannya pun sangat panjang dan sulit dihafal. Sekarang, kita dapat menggunakan HTML versi 5 dengan cara yang sangat mudah dan valid.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>`,
+                            `<h3 class="title">Elemen &lt;html&gt;</h3>
+                            <p class="mb-4">Hierarki elemen teratas dari halaman web adalah elemen &lt;html&gt;. Elemen ini digunakan untuk memberitahu browser bahwa ia merupakan sebuah berkas HTML sekaligus menjadi root dari halaman web. Seluruh elemen lain tentunya dituliskan di dalam elemen ini (child-element).</p>
+                            <h3 class="title">Elemen &lt;head&gt;</h3>
+                            <p class="mb-4">Elemen &lt;head&gt; berfungsi sebagai tempat disimpannya informasi dari dokumen HTML. Informasi dapat berupa elemen meta, style, favicon, atau link. Selain itu, kita bisa memberikan judul dari halaman web (tab browser). Berikut adalah beberapa contoh elemen yang biasanya diletakkan dalam elemen ini.</p>
+                            <ul class="list-disc mb-4">
+                                <li>&lt;title&gt;&nbsp;</li>
+                                <li>&lt;style&gt;</li>
+                                <li>&lt;base&gt;</li>
+                                <li>&lt;link&gt;</li>
+                                <li>&lt;meta&gt;</li>
+                                <li>&lt;script&gt;</li>
+                                <li>&lt;noscript&gt;</li>
+                            </ul>`,
+                            `<p class="mb-4">Pada HTML versi 4.01, elemen &lt;head&gt; wajib ada dalam sebuah berkas HTML. Berikut adalah contoh pembuatan elemen &lt;head&gt; beserta kontennya.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="tag">&lt;head&gt;</span></li>
+                                            <li class="L1"><span class="pln">&nbsp; </span><span class="tag">&lt;meta</span> <span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li>
+                                            <li class="L2"><span class="pln">&nbsp; </span><span class="tag">&lt;title&gt;</span><span class="pln">Judul Halaman Anda</span><span class="tag">&lt;/title&gt;</span></li>
+                                            <li class="L3"><span class="pln">&nbsp; </span><span class="tag">&lt;style&gt;</span></li>
+                                            <li class="L4"><span class="pln">&nbsp; &nbsp; </span><span class="com">/* Kode CSS anda */</span></li>
+                                            <li class="L5"><span class="pln">&nbsp; </span><span class="tag">&lt;/style&gt;</span></li>
+                                            <li class="L6"><span class="tag">&lt;/head&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-4">Namun, penggunaan &lt;head&gt; dapat dihilangkan sejak HTML5. Jadi, struktur dasar berkas HTML menjadi seperti berikut.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li>
+                                            <li class="L1"><span class="tag">&lt;html&gt;</span></li>
+                                            <li class="L2"><span class="pln">&nbsp; </span><span class="tag">&lt;meta</span> <span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li>
+                                            <li class="L3"><span class="pln">&nbsp; </span><span class="tag">&lt;title&gt;</span><span class="pln">Judul Halaman</span><span class="tag">&lt;/title&gt;</span></li>
+                                            <li class="L4"><span class="pln">&nbsp; </span><span class="tag">&lt;style&gt;</span></li>
+                                            <li class="L5"><span class="pln">&nbsp; &nbsp; </span><span class="com">/* style */</span></li>
+                                            <li class="L6"><span class="pln">&nbsp; </span><span class="tag">&lt;/style&gt;</span></li>
+                                            <li class="L7"><span class="pln">&nbsp;</span></li>
+                                            <li class="L8"><span class="pln">&nbsp; </span><span class="tag">&lt;body&gt;</span></li>
+                                            <li class="L9"><span class="pln">&nbsp; &nbsp; </span><span class="tag">&lt;h1&gt;</span><span class="pln">Judul Utama</span><span class="tag">&lt;/h1&gt;</span></li>
+                                            <li class="L0"><span class="pln">&nbsp; &nbsp; </span><span class="tag">&lt;p&gt;</span><span class="pln">Sebuah paragraf</span><span class="tag">&lt;/p&gt;</span></li>
+                                            <li class="L1"><span class="pln">&nbsp; </span><span class="tag">&lt;/body&gt;</span></li>
+                                            <li class="L2"><span class="tag">&lt;/html&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>`,
+                            `<h3 dir="ltr" class="title">Elemen &lt;body&gt;</h3>
+                            <p dir="ltr">Tahukah kamu, bagaimana konten dapat ditampilkan dan di mana peletakannya? Setiap konten atau elemen dalam elemen &lt;body&gt; akan ditampilkan dalam halaman web. Elemen apa pun, baik gambar, judul, daftar barang, paragraf, dsb., yang diletakkan dalam elemen ini akan muncul. Bahkan, teks yang tak dibungkus oleh elemen sekalipun.&nbsp;</p>
+                            <p dir="ltr">Silakan tuliskan kode berikut, simpan dalam format HTML, dan jalankan pada browser.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li>
+                                            <li class="L1"><span class="tag">&lt;html&gt;</span></li>
+                                            <li class="L2"><span class="pln">&nbsp; </span><span class="tag">&lt;head&gt;</span></li>
+                                            <li class="L3"><span class="pln">&nbsp; &nbsp; </span><span class="tag">&lt;title&gt;</span><span class="pln">Judul Dokumen HTML</span><span class="tag">&lt;/title&gt;</span></li>
+                                            <li class="L4"><span class="pln">&nbsp; </span><span class="tag">&lt;/head&gt;</span></li>
+                                            <li class="L5"><span class="pln">&nbsp; </span><span class="tag">&lt;body&gt;</span></li>
+                                            <li class="L6"><span class="pln">&nbsp; &nbsp; </span><span class="tag">&lt;h1&gt;</span><span class="pln">Heading yang Diletakkan dalam Elemen Body</span><span class="tag">&lt;/h1&gt;</span></li>
+                                            <li class="L7"><span class="pln">&nbsp; &nbsp; </span><span class="tag">&lt;p&gt;</span><span class="pln">Ini merupakan sebuah paragraf yang juga diletakkan pada elemen body. Konten ini dapat dilihat oleh pengguna pada jendela browser.</span><span class="tag">&lt;/p&gt;</span></li>
+                                            <li class="L8"><span class="pln">&nbsp; </span><span class="tag">&lt;/body&gt;</span></li>
+                                            <li class="L9"><span class="tag">&lt;/html&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>`,
+                            `<p class="mb-4">Ini hasil dari code tersebut</p>
+                            <p class="mb-4">
+                                <div class="flex justify-center">
+                                    <img src='https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:3734d4cee71ea05411752cd1b477885e20230614154717.jpeg' alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </p>
+                            <p class="mb-4">Seluruh konten yang dituliskan pada body akan ditampilkan. Namun, ada kode yang tidak akan ditampilkan. Kode atau fitur yang dimaksud adalah komentar. Jika ingin menuliskan keterangan tambahan pada struktur dokumen HTML, kita perlu menggunakan commenting tag. Ini dituliskan dengan simbol <span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">&lt;!--</span> sebagai pembuka dan <span style="padding: 2px 4px; color: #c7254e; background-color: #f9f2f4;">--&gt;</span> sebagai penutupnya.</p>`,
+                            `<p class="mb-4">Semua yang dituliskan di antara tag komentar tidak akan memberikan pengaruh apa pun, termasuk tampilan di jendela browser. Berikut adalah contoh implementasi dari tag komentar.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li class="L0"><span class="com">&lt;!-- Ini merupakan sebuah komentar --&gt;</span></li>
+                                            <li class="L1"><span class="com">&lt;!-- Ini merupakan</span></li>
+                                            <li class="L2"><span class="com">&nbsp; sebuah komentar yang</span></li>
+                                            <li class="L3"><span class="com"> terdiri lebih dari satu baris --&gt;</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-4">Komentar berguna untuk memberikan label dan mengorganisasi sebuah dokumen yang panjang, terlebih ketika bekerja secara tim.</p>`,
+                            `<h3 class="title">Lorem Ipsum Generator</h3>
+                            <p class="mb-4">Lorem ipsum adalah teks standar yang ditempatkan untuk mendemonstrasikan elemen grafis atau presentasi visual, seperti font, tipografi, dan tata letak. Tujuan penggunaan lorem ipsum sebagai berikut.</p>
+                            <ol class="list-decimal">
+                                <li>Sebagai pengisi sementara jika belum ada konten teks.</li>
+                                <li>Jika ingin menunjukkan hasil website sementara yang mana audiens diharapkan lebih fokus kepada elemen desain yang dipresentasikan, bukan pada isinya (teks).</li>
+                            </ol>
+                            <p class="mb-4">Penggunaan lorem ipsum biasanya digunakan pada proses pengembangan (development).</p>`,
+                            `<p class="mb-4">Berbagai cara untuk membuat teks lorem ipsum dijelaskan pada poin-poin berikut.</p>
+                            <ol class="list-decimal">
+                                <li>
+                                    <strong>Menggunakan Microsoft Word</strong><br />Buat dokumen baru dan ketiklah kode berikut pada lembar kerja.<br /><br />
+                                    <div class="flex justify-center my-4">
+                                        <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                            <div class="rounded-lg bg-black">
+                                                <ol class="code">
+                                                    <li class="L0"><span class="pun">=</span><span class="pln">lorem</span><span class="pun">()</span></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4"><br />Kemudian, tekan tombol enter pada keyboard. Teks lorem ipsum akan muncul secara otomatis. Kamu juga dapat mengatur jumlah teks yang muncul dengan cara ketik kode berikut.<br /><br /></p>
+                                    <div class="flex justify-center my-4">
+                                        <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                            <div class="rounded-lg bg-black">
+                                                <ol class="code">
+                                                    <li class="L0"><span class="pun">=</span><span class="pln">lorem</span><span class="pun">(</span><span class="str">"angka_paragraf"</span><span class="pun">,</span> <span class="str">"angka_kalimat_pada_setiap_paragraf"</span><span class="pun">)</span></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />Contohnya, jika mengetik =lorem(3,4), teks lorem ipsum akan muncul sebanyak 3 paragraf dan masing-masing paragraf terdapat 4 kalimat.<br /><br />
+                                    <div class="flex justify-center">
+                                        <video
+                                            class="fr-draggable fr-fvc fr-dvi w-1/2"
+                                            autoplay="autoplay"
+                                            loop="loop"
+                                            muted="muted"
+                                            width="300"
+                                            height="150"
+                                            src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/module-02/04-lorem-ipsum-in-ms-word.webm"
+                                        ></video>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Generator Online</strong><br />Tersedia banyak situs generator lorem ipsum gratis, seperti <a href="https://id.lipsum.com/"><u>id.lipsum.com</u></a> dan <a href="https://loremipsum.io/"><u>loremipsum.io</u></a>.<br /><br />
+                                    <div class="flex justify-center">
+                                        <video
+                                            class="fr-draggable fr-fvc fr-dvi w-1/2"
+                                            autoplay="autoplay"
+                                            loop="loop"
+                                            muted="muted"
+                                            width="300"
+                                            height="150"
+                                            src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/module-02/03-lipsum-com-example.webm"
+                                        ></video>
+                                    </div>
+                                </li>
+                            </ol>`,
+                        ],
+                    },
                 ],
             },
             {title: 'Pendalaman HTML', bab: [
