@@ -872,27 +872,221 @@ const materi = [
                     },
                 ],
             },
-            {title: 'Pendalaman HTML', bab: [
-                // 'Pengantar Pendalaman HTML',
-                // 'Paragraf',
-                // 'Heading',
-                // 'List',
-                // 'Menambahkan List pada Halaman Profil',
-                // 'Gambar',
-                // 'Menambahkan Gambar pada Halaman Profil',
-                // 'Inline Formatting Text',
-                // 'Menerapkan Elemen Anchor ada Halaman Profil',
-                // 'Semantic HTML',
-                // 'Generic Element',
-                // 'Tabel',
-                // 'Struktur Dasar Tabel',
-                // 'Spanning Cell',
-                // 'Elemen dan Atribut pada Tabel',
-                // 'Input User',
-                // 'Atribut pada Elemen Input',
-                // 'Mengirim Data Formulir',
-                // 'Special Character',
-            ]},
+            {
+                title: 'Pendalaman HTML',
+                bab: [
+                    {
+                        title: 'Pengantar Pendalaman HTML',
+                        subbab: [
+                            `<h1 class="title">Pengantar Pendalaman HTML</h1>
+                            <p class="mb-4">Pada modul sebelumnya, kita telah mempelajari permukaan dari HTML. Pengetahuan tersebut sangat dibutuhkan sebagai fondasi untuk mempelajari materi selanjutnya. Tidak kalah penting juga, itu sangat dibutuhkan dalam membangun halaman web yang baik dan benar.</p>
+                            <p class="mb-4">Selain mempelajari HTML, kita juga sudah berlatih dalam membangun halaman web sederhana, mulai dari tanpa struktur dasar dokumen HTML hingga mengidentifikasi dan menerapkan elemen-elemen yang sesuai dengan konten yang ditampilkan. Pada modul ini, kita akan menyelam lebih dalam dengan variasi elemen pada HTML. Harapannya, kita dapat memilih elemen yang sesuai dalam menampilkan konten, terutama ketika mengembangkan proyek latihan kita.</p>
+                            <p class="mb-4">Beberapa hal yang akan kita pelajari sebagai berikut.</p>
+                            <ul class="list-decimal">
+                                <li class="mb-4">Variasi elemen seperti paragraf, heading, list, gambar, dan teks terformat.</li>
+                                <li class="mb-4">Membangun halaman web dengan semantic HTML.</li>
+                                <li class="mb-4">Mengelompokkan elemen dengan generic elemen.</li>
+                                <li class="mb-4">Membuat tabel pada HTML.</li>
+                                <li class="mb-4">Mengetahui berbagai macam elemen input untuk membuat formulir dalam halaman web.</li>
+                            </ul>
+                            <p>Pada akhir modul, kita akan melanjutkan pengembangan proyek Halaman Profil dengan variasi elemen yang telah dipelajari. Berikut adalah hasil akhir dari latihan modul ini.</p>
+                            <div class="flex justify-center">
+                                <img src="https://lh4.googleusercontent.com/xqaF3ej_LkuRBUTKphtBB9TZL_yr5HuHTM-VFhQ5S6-3DMPAn3aF8AmyQUtVc8Rhm2uU3MDz1MTCzM2Lgs_agZ3cM8YRjGA1nkrVdNAdPy3Q5qJxYWTlERHOIGSog8jEK6RmSH2mq1X5RqDtiKsz_90" alt="html" class="my-4 lg:w-1/2" />
+                            </div>`,
+                        ],
+                    },
+                    {
+                        title: 'Paragraf',
+                        subbab: [
+                            `
+                            <h2 class="title">Paragraf</h2>
+                            <p>Paragraf adalah elemen paling mendasar dari sebuah dokumen teks. Pada HTML, kita bisa menunjukkan sebuah paragraf dengan menggunakan elemen &lt;p&gt;. Contohnya berikut.</p>
+                            <div class="flex justify-center my-4">
+                                <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                    <div class="rounded-lg bg-black">
+                                        <ol class="code">
+                                            <li>&lt;p&gt;</li>
+                                            <p style="padding-left: 30px;">Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga...</p>
+                                            <li>&lt;/p&gt;</li>
+                                            <li>&lt;p&gt;</li>
+                                            <p style="padding-left: 30px;">Berdasarkan filosofi Sunda, kata Bandung juga berasal dari kalimat Nga-Bandung-an Banda Indung, yang merupakan kalimat sakral dan luhur karena mengandung nilai ajaran Sunda. Nga-Bandung-an artinya menyaksikan atau bersaksi...</p>
+                                            <li>&lt;/p&gt;</li>
+                                        <ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-4"><span class="fr-video fr-fvc fr-dvb fr-draggable">Ketika menggunakan elemen paragraf, browser akan menampilkannya dalam baris baru dan sedikit jarak (<em>space</em>) di bawah elemen. Dalam CSS, ini disebut sebagai margin. Singkatnya, ia merupakan bagian dari elemen yang mengatur jarak antar elemen. Margin akan kita bahas dan atur pada penerapan styling.</span></p>
+                            <p class="mb-4">Elemen paragraf tidak melulu menampilkan teks. Ia dapat berisi elemen lain yang memiliki sifat inline, seperti elemen gambar, input, dan sebagainya. Anda akan menemukan bahasan elemen inline pada materi-materi berikutnya.</p>
+                            <p class="mb-4">Pada modul sebelumnya, Anda sudah berlatih mengidentifikasi elemen pada Halaman Profil Bandung. Sebagai catatan, gunakanlah elemen paragraf untuk konten bertipe paragraf. Bagi teks yang bersifat sebagai judul, jangan gunakan elemen ini meskipun tidak menjadi error. Hal ini karena ada elemen lain yang lebih cocok untuk hal tersebut. Namun, tidak perlu risau. Kita akan membahas elemen lainnya secara lengkap pada materi berikutnya.</p>
+                            <blockquote>
+                            <p class="mb-4"><strong>Catatan:</strong><br />Pastikan kita selalu gunakan elemen HTML dalam menampilkan seluruh teks (konten) yang ada pada dokumen HTML. Teks yang ditampilkan tanpa dibungkus elemen disebut anonymous text.</p>
+                            </blockquote>`,
+                        ],
+                    },
+                    {
+                        title: 'Heading',
+                        subbab: [
+                            `
+                            <h2 class="title">Heading</h2>
+                            <p class="my-4">Pada modul sebelumnya, kita sudah melihat contoh penggunaan heading yang diterapkan pada konten yang kita siapkan. Kita menggunakan &lt;h1&gt; dan &lt;h2&gt; dalam mengindikasi judul dan subjudul pada kontennya. Pada HTML, ada elemen &lt;h1&gt; hingga &lt;h6&gt; elemen heading yang dapat kita gunakan.</p>
+                            <p class="my-4">Ketika kita menambahkan heading pada konten, ia merepresentasikan garis besar halaman pada sebuah browser. Alat bantu baca seperti <em>screen reader</em> membaca garis besar halaman untuk bantu memetakan dan mengarahkan pengguna selama menjelajahi halaman. Selain itu, heading juga merupakan elemen yang dicari oleh mesin pencarian, contohnya Google Search.</p>
+                            <p class="my-4">Ini contoh penerapan heading empat level pada sebuah dokumen. Tiap level heading dituliskan dengan cara yang sama.</p>
+                            <div class="flex justify-center">
+                                <img src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/20191203175534e2e2c35a984e223d39b72943d064e196.png" alt="html" class="my-4 lg:w-1/2" />
+                            </div>
+                            <p dir="ltr">Pada browser, standarnya heading akan ditampilkan dengan tulisan&nbsp;<strong>tebal</strong> (<em>bolded text</em>), dimulai dari h1 dengan ukuran teks paling besar kemudian berurutan sesuai dengan&nbsp;<em>level heading-</em>nya.</p>
+                            <div class="flex justify-center">
+                                <img src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/20191203175711565dc6e641dc11a4a0005593d1a44727.png" alt="html" class="my-4 lg:w-1/2" />
+                            </div>`,
+                        ]
+                    },
+                    {
+                        title: 'List',
+                        subbab: [
+                            `<h2 class="title">List</h2>
+                            <p class="my-4">Sebagaimana yang sudah disebutkan pada pembahasan paragraf, tidak semua teks dibungkus oleh paragraf, salah satunya list. Kita pun terbiasa membuat list dalam kehidupan sehari-hari, baik membuat <em>to-do list</em> maupun daftar yang terstruktur sekalipun.&nbsp;</p>
+                            <p class="my-4">Pada HTML terdapat tiga tipe list.</p>
+                            <ol class="list-decimal mb-4">
+                                <li><em>Unordered lists</em>: daftar yang ditampilkan tidak memiliki urutan.&nbsp;</li>
+                                <li><em>Ordered lists</em>: daftar yang ditampilkan secara terurut.</li>
+                                <li><em>Description lists</em>: daftar yang terbuat dari beberapa istilah diikuti dengan deskripsi dari istilah tersebut.</li>
+                            </ol>`,
+                            `<h3 class="title">Unordered List</h3>
+                            <p class="my-4">Seperti namanya, unordered list merupakan daftar yang tidak mementingkan urutan. Standarnya, unordered list menampilkan bullet pada tiap item list-nya (tetapi kita bisa mengubahnya dengan styling).</p>
+                            <p class="my-4">Untuk menetapkan konten sebagai unordered list kita gunakan &lt;ul&gt;&lt;/ul&gt; kemudian di dalam elemen tersebut kita gunakan tags &lt;li&gt;&lt;/li&gt; untuk menetapkan item pada list tersebut. Contoh penerapannya sebagai berikut.</p>
+                            <p class="my-4"><iframe class="fr-draggable" title="Dicoding Sandpack" src="https://academy-sandpack.dicoding.dev/a123/92-list-sample?theme=dark" width="100%" height="600"></iframe></p>
+                            <p class="my-4">Di antara tag elemen &lt;li&gt;, kita dapat mengisikan konten apa pun termasuk elemen HTML lain. Contohnya, kita dapat memasukkan sebuah <em>heading</em> atau paragraf pada item.</p>
+                            <div class="prettyprint-wrapper">&nbsp;</div>
+                            <div class="prettyprint-wrapper">
+                            <ol class="linenums">
+                            <li class="L0"><span class="tag">&lt;ul&gt;</span></li>
+                            <li class="L1"><span class="pln">&nbsp;&nbsp;</span><span class="tag">&lt;li&gt;&lt;h1&gt;</span><span class="pln">Sebuah Heading sebagai item list</span><span class="tag">&lt;/h1&gt;&lt;/li&gt;</span></li>
+                            <li class="L2"><span class="pln">&nbsp;&nbsp;</span><span class="tag">&lt;li&gt;&lt;h2&gt;</span><span class="pln">Sebuah Heading level 2 sebagai item list</span><span class="tag">&lt;/h2&gt;&lt;/li&gt;</span></li>
+                            <li class="L3"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;&lt;p&gt;</span><span class="pln">Sebuah paragraf sebagai item list</span><span class="tag">&lt;/p&gt;&lt;/li&gt;</span></li>
+                            <li class="L4"><span class="tag">&lt;/ul&gt;</span></li>
+                            </ol>
+                            </div>
+                            <p class="my-4">Sebagaimana kita sudah ketahui, list item akan menampilkan seperti format heading.</p>
+                            <div class="flex justify-center">
+                                <img src='https://d17ivq9b7rppb3.cloudfront.net/original/academy/20191203180246d0af3ff194fa3c9137548f850f613dc2.jpeg' alt="html" class="mb-4 lg:w-1/2" />
+                            </div>
+                            <p class="my-4">Kita juga bisa menambahkan elemen &lt;ul&gt; lagi dalam <em>list item</em> untuk membuat <em>nested list</em>.</p>
+                            <p class="my-4"><iframe class="fr-draggable" title="Dicoding Sandpack" src="https://academy-sandpack.dicoding.dev/a123/07-list-sample?theme=dark" width="100%" height="600"></iframe></p>
+                            <p class="my-4">&nbsp;</p>`,
+                            `<h3 class="title">Ordered List</h3>
+                            <p class="my-4"><em>Ordered list</em> digunakan untuk membuat list yang mementingkan urutan. Contohnya, membuat daftar instruksi langkah demi langkah sehingga dibutuhkan urutan yang sesuai. Ordered list bekerja seperti unordered list, tetapi perbedaannya adalah pada tiap item menampilkan angka bukan sebuah <em>bullet</em>. Angka yang ditampilkan, otomatis berurut tiap item-nya sehingga kita tidak perlu menuliskan secara kasar urutan nomornya. Hal ini tentu mempermudah kita untuk mengorganisasi tiap itemnya.</p>
+                            <p class="my-4">Untuk menetapkan konten sebagai ordered list kita gunakan &lt;ol&gt;&lt;/ol&gt;. Sama seperti unordered list, tiap item dalam list ditetapkan dengan menggunakan tags &lt;li&gt;&lt;/li&gt;.</p>
+                            <p class="my-4"><iframe class="fr-draggable" title="Dicoding Sandpack" src="https://academy-sandpack.dicoding.dev/a123/08-list-sample?theme=dark" width="100%" height="600"></iframe></p>`,
+                            `<p class="my-4">Sebagaimana unordered list, di antara tag elemen &lt;li&gt;, kita dapat mengisikan konten apa pun termasuk elemen HTML lain.</p>
+                            <p class="my-4">Pada ordered list, tipe urutan angkanya dapat kita atur melalui sebuah atribut <em>type</em>. Contohnya, selain nomor, urutan angka dapat diganti dengan alfabet ataupun angka romawi.</p>
+                            <div class="flex">
+                                <div class="flex justify-center my-4 basis-1/2">
+                                    <div class="px-8 py-4 bg-black border border-gray-800 rounded-lg w-3/4 max-h-[28rem] h-full overflow-auto">
+                                        <div class="rounded-lg bg-black">
+                                            <ol class="code">
+                                                <li class="L0"><span class="tag">&lt;ol</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"I"</span><span class="tag">&gt;</span></li>
+                                                <li class="L1"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah pertama</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L2"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah kedua</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L3"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah ketiga</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L4"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah selanjutnya</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L5"><span class="tag">&lt;/ol&gt;</span></li>
+                                                <li class="L6"><span class="pln">&nbsp;</span></li>
+                                                <li class="L7"><span class="tag">&lt;ol</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"A"</span><span class="tag">&gt;</span></li>
+                                                <li class="L8"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah pertama</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L9"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah kedua</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L0"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah ketiga</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L1"><span class="pln">&nbsp; </span><span class="tag">&lt;li&gt;</span><span class="pln">Langkah selanjutnya</span><span class="tag">&lt;/li&gt;</span></li>
+                                                <li class="L2"><span class="tag">&lt;/ol&gt;</span></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center basis-1/2">
+                                    <img src='hasil.png' alt="html" class="mb-4 lg:w-1/2" />
+                                </div>
+                            </div>`,
+                            `<p class="my-4">Berikut adalah nilai-nilai yang dapat digunakan pada atribut type pada elemen &lt;ol&gt;.</p>
+                            <div class="flex justify-center mb-4">
+                                <table class="table text-left text-gray-400">
+                                    <thead class="uppercase bg-gray-700 text-gray-400">
+                                        <tr>
+                                            <th style="text-align: center; width: 109.767px;" class="px-6 py-3">
+                                                <p dir="ltr"><strong>Nilai</strong></p>
+                                            </th>
+                                            <th style="text-align: center; width: 544.733px;" class="px-6 py-3">
+                                                <p dir="ltr"><strong>Deskripsi</strong></p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b bg-gray-800 border-gray-700">
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">1</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Menggunakan angka dalam urutan item (default)</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">a</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Menggunakan huruf kecil dalam urutan item.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b bg-gray-800 border-gray-700">
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">A</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Menggunakan huruf besar dalam urutan item</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">i</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Menggunakan huruf romawi kecil dalam urutan item.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b bg-gray-800 border-gray-700">
+                                            <td style="width: 109.767px;" class="px-6 py-4">
+                                                <p dir="ltr">I</p>
+                                            </td>
+                                            <td style="width: 544.733px;" class="px-6 py-4">
+                                                <p dir="ltr">Menggunakan huruf romawi besar dalam urutan item</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="my-4">Selain tipe angka pada urutan, kita juga bisa menetapkan nilai awal pada sebuah <em>ordered list</em> dengan menggunakan atribut <em>start</em><strong>.&nbsp;</strong>Contohnya, jika kita ingin memulai sebuah list dari angka 7, kita tetapkan atribut start dengan nilai 7 pada elemen &lt;ol&gt;.</p>
+                            <p class="my-4"><iframe class="fr-draggable" title="Dicoding Sandpack" src="https://academy-sandpack.dicoding.dev/a123/09-list-sample?theme=dark" width="100%" height="600"></iframe></p>`,
+                            `<p class="my-4">Secara default, urutan list diawali dengan urutan paling rendah. Namun, kita dapat menambahkan atribut reversed pada elemen &lt;ol&gt; untuk membuat urutan dalam sebuah list terbalik. Atribut ini berbeda dengan atribut yang lain (yang sudah dibahas sebelumnya), atribut ini tidak memerlukan sebuah nilai ketika menggunakannya. Atribut ini hanya menandakan sebuah list untuk membalikkan urutan angka pada tiap item-nya. Berikut contoh penggunaannya.</p>
+                            <p class="my-4"><iframe class="fr-draggable" title="Dicoding Sandpack" src="https://academy-sandpack.dicoding.dev/a123/10-list-sample?theme=dark" width="100%" height="600"></iframe></p>
+                            <p class="my-4">&nbsp;</p>
+                            <p class="my-4">&nbsp;</p>`,
+                        ]
+                    },
+                    // 'Menambahkan List pada Halaman Profil',
+                    // 'Gambar',
+                    // 'Menambahkan Gambar pada Halaman Profil',
+                    // 'Inline Formatting Text',
+                    // 'Menerapkan Elemen Anchor ada Halaman Profil',
+                    // 'Semantic HTML',
+                    // 'Generic Element',
+                    // 'Tabel',
+                    // 'Struktur Dasar Tabel',
+                    // 'Spanning Cell',
+                    // 'Elemen dan Atribut pada Tabel',
+                    // 'Input User',
+                    // 'Atribut pada Elemen Input',
+                    // 'Mengirim Data Formulir',
+                    // 'Special Character',
+                ],
+            },
         ],
         shadowColor: 'rgba(242,102,37,1)',
     },

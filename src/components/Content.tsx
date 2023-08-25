@@ -16,7 +16,9 @@ export default function Content() {
 
     useEffect(() => {
         if (contentRef.current) contentRef.current.innerHTML = subbab;
-        // if (contentRef.current) contentRef.current.innerHTML = ``;
+        // if (contentRef.current) contentRef.current.innerHTML = `
+            
+        // `;
     }, [contentRef, subbab]);
 
     return <div className="my-40" ref={contentRef}></div>;
